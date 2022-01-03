@@ -7,13 +7,28 @@
     <title>Set Sail</title>
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 <body>
-    <div class="setsail">
+    <div class="setsail js-setsail">
         <header>
-            <div class="header-contact">
+            <div class="grid wide tabs-mobile-header">
+                <span class="tabs-mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <div class="tabs-mobile-logo">
+                    <img src="./assets/img/logo-mobile-img.png" alt="">
+                </div>
+                <div class="header-login  js-modal-open">
+                    <span class="header-link-item">
+                        <i class="ti-user"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="header-contact hide-on">
                 <a href="" class="header-link-item">
                     <i class="ti-email"></i>
                     setsail@qode.com
@@ -28,7 +43,7 @@
                 </a>
             </div>
             <div class="header-right">
-                <div class="header-link">
+                <div class="header-link hide-on">
                     <a href="" class="header-link-item">
                         <i class="ti-twitter-alt"></i>
                     </a>
@@ -42,7 +57,7 @@
                         <i class="ti-instagram"></i>
                     </a>
                 </div>
-                <div class="header-language">
+                <div class="header-language hide-on">
                     <a href=""class="header-link-item">
                         English
                         <i class="ti-angle-down"></i>
@@ -60,27 +75,30 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header-login  js-modal-open">
-                    <span class="header-link-item js-modal-open">
+                <div class="header-login  js-modal-open hide-on">
+                    <span class="header-link-item">
                         <i class="ti-user"></i>
                     </span>
                 </div>
             </div>
         </header>
         <div class="setsail-container">
-            <div class="grid">
-                <div class="container__logo">
+            <div class="grid wide">
+                <div class="container__logo hide-on">
                     <img src="./assets/img/logo-centered.png" alt="" class="container__logo-img">
                 </div>
 
                 <div class="container__menu">
                     <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Home</a>
-
+                        <li class="menu-item js-menu-item">
+                            <a href="" class="menu-link active">
+                                Home
+                                <i class="menu-link-icon fas fa-chevron-right"></i>                            
+                            </a>
+                            
                             <ul class="menu-sub-list">
                                 <li class="menu-sub-item">
-                                    <a href="" class="menu-link">Travel Agency</a>
+                                    <a href="" target="_blank" class="menu-link">Travel Agency</a>
                                 </li>
                                 <li class="menu-sub-item">
                                     <a href="" class="menu-link">Winter Holidays</a>
@@ -100,20 +118,23 @@
                                 <li class="menu-sub-item">
                                     <a href="" class="menu-link">Destinations Carousel</a>
                                 </li>
-                                <li class="menu-sub-item">
+                                <li class="menu-sub-item hide-on">
                                     <a href="" class="menu-link">Wine Tours</a>
                                 </li>
-                                <li class="menu-sub-item">
+                                <li class="menu-sub-item hide-on">
                                     <a href="" class="menu-link">Vacation Showcase</a>
                                 </li>
-                                <li class="menu-sub-item">
+                                <li class="menu-sub-item hide-on">
                                     <a href="" class="menu-link">Landing</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Pages</a>
-
+                        <li class="menu-item js-menu-item">
+                            <a href="" class="menu-link">
+                                Pages
+                                <i class="menu-link-icon fas fa-chevron-right"></i>                            
+                            </a>
+                            
                             
                             <ul class="menu-sub-list">
                                 <li class="menu-sub-item">
@@ -143,10 +164,12 @@
                                 
                             </ul>
                         </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Destinations</a>
+                        <li class="menu-item js-menu-item">
+                            <a href="" class="menu-link">
+                                Destinations
+                                <i class="menu-link-icon fas fa-chevron-right"></i>                            
+                            </a>
 
-                            
                             <ul class="menu-sub-list">
                                 <li class="menu-sub-item">
                                     <a href="" class="menu-link">Destinations list</a>
@@ -159,9 +182,12 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Tours</a>
-
+                        <li class="menu-item js-menu-item">  
+                            <a href="" class="menu-link">
+                            Tours
+                            <i class="menu-link-icon fas fa-chevron-right"></i>                        
+                        </a>
+                            
                             
                             <ul class="menu-sub-list">
                                 <li class="menu-sub-item">
@@ -178,21 +204,27 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Blog</a>
-
+                        <li class="menu-item js-menu-item">
+                            <a href="" class="menu-link">
+                                Blog
+                                <i class="menu-link-icon fas fa-chevron-right"></i>                            
+                            </a>
+                            
                             <ul class="menu-sub-list">
-                                <li class="menu-sub-item">
+                                <li class="menu-sub-item js-menu-sub-item">
                                     <a href="" class="menu-link">Blog masonry</a>
+                                    <ul class="menu-sub-list js-menu-sub-list">
+                                       
+                                    </ul>
                                 </li>
-                                <li class="menu-sub-item">
+                                <li class="menu-sub-item js-menu-sub-item">
                                     <a href="" class="menu-link">
                                         Blog standard
-                                        <i class="ti-angle-right"></i>
+                                        <i class="menu-link-icon fas fa-chevron-right"></i>
                                     </a>
                                     
                             
-                                    <ul class="menu-sub-list">
+                                    <ul class="menu-sub-list js-menu-sub-list">
                                         <li class="menu-sub-item">
                                             <a href="" class="menu-link">About us</a>
                                         </li>
@@ -204,13 +236,13 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="menu-sub-item">
+                                <li class="menu-sub-item js-menu-sub-item">
                                     <a href="" class="menu-link">
                                         Post types
-                                        <i class="ti-angle-right"></i>
+                                        <i class="menu-link-icon fas fa-chevron-right"></i>
                                     </a>
 
-                                    <ul class="menu-sub-list">
+                                    <ul class="menu-sub-list js-menu-sub-list">
                                         <li class="menu-sub-item">
                                             <a href="" class="menu-link">About us</a>
                                         </li>
@@ -237,23 +269,33 @@
                               
                             </ul>
                         </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Shop</a>
-
+                        <li class="menu-item js-menu-item">
+                            <a href="" class="menu-link">
+                                Shop
+                                <i class="menu-link-icon fas fa-chevron-right"></i>                            
+                            </a>
+                            
                             <ul class="menu-sub-list menu-sub-list--shop">
-                                <li class="menu-sub-item">
+                                <li class="menu-sub-item js-menu-sub-item">
                                     <a href="" class="menu-link">Prodduct list</a>
+                                    <ul class="menu-sub-list js-menu-sub-list">
+                                       
+                                    </ul>
                                 </li>
-                                <li class="menu-sub-item">
+                                <li class="menu-sub-item js-menu-sub-item">
                                     <a href="" class="menu-link">Product single</a>
+                                    <ul class="menu-sub-list js-menu-sub-list">
+                                       
+                                    </ul>
                                 </li>
-                                <li class="menu-sub-item">
-                                    <i class="ti-angle-left"></i>
+                                <li class="menu-sub-item js-menu-sub-item">
+                                    <i class="ti-angle-left hide-on"></i>
                                     <a href="" class="menu-link">
                                         Shop layouts
+                                        <i class="menu-link-icon fas fa-chevron-right"></i>
                                     </a>
 
-                                    <ul class="menu-sub-list menu-sub-list--shop">
+                                    <ul class="menu-sub-list js-menu-sub-list menu-sub-list--shop">
                                         <li class="menu-sub-item">
                                             <a href="" class="menu-link">Three collums</a>
                                         </li>
@@ -265,13 +307,14 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="menu-sub-item">
-                                    <i class="ti-angle-left"></i>
+                                <li class="menu-sub-item js-menu-sub-item">
+                                    <i class="ti-angle-left hide-on"></i>
                                     <a href="" class="menu-link">
                                         shop pages
+                                        <i class="menu-link-icon fas fa-chevron-right"></i>
                                     </a>
 
-                                    <ul class="menu-sub-list menu-sub-list--shop">
+                                    <ul class="menu-sub-list js-menu-sub-list menu-sub-list--shop">
                                         <li class="menu-sub-item">
                                             <a href="" class="menu-link">My account</a>
                                         </li>
@@ -285,51 +328,59 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Element</a>
+                        <li class="menu-item js-menu-item">
+                            <a href="" class="menu-link">
+                                Elements
+                                <i class="menu-link-icon fas fa-chevron-right"></i>                            
+                            </a>
+                            
+                            <div class="element menu-sub-list">
+                                <div class="grid wide">
+                                    <div class="row">
 
-                            <div class="element">
-                                <div class="grid">
-                                    <div class="grid__row">
-
-                                        <div class="grid__col-4">
-                                            <ul class="element__menu-sub-list">
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="element__name menu-link">Featured</a>
-                                                </li>
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="menu-link">Tour list</a>
-                                                </li>
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="menu-link">Tour carousel</a>
-                                                </li>
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="menu-link">Tour filter</a>
-                                                </li>
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="menu-link">Destination with tours</a>
-                                                </li>
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="menu-link">Destination list</a>
-                                                </li>
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="menu-link">Destination fullscreen slider</a>
-                                                </li>
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="menu-link">Fullscreen sections</a>
-                                                </li>
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="menu-link">Review carousel</a>
-                                                </li>
+                                        <div class="col l-3 m-12 c-12 ">
+                                            <span class="element__name menu-link menu-sub-item menu-item js-menu-sub-item">
+                                                Featured
+                                                <i class="menu-link-icon fas fa-chevron-right"></i>
+                                            </span>
+                                            <ul class="element__menu-sub-list js-menu-sub-list">
+                                               
+                                                    <li class="menu-sub-item">
+                                                        <a href="" class="menu-link">Tour list</a>
+                                                    </li>
+                                                    <li class="menu-sub-item">
+                                                        <a href="" class="menu-link">Tour carousel</a>
+                                                    </li>
+                                                    <li class="menu-sub-item">
+                                                        <a href="" class="menu-link">Tour filter</a>
+                                                    </li>
+                                                    <li class="menu-sub-item">
+                                                        <a href="" class="menu-link">Destination with tours</a>
+                                                    </li>
+                                                    <li class="menu-sub-item">
+                                                        <a href="" class="menu-link">Destination list</a>
+                                                    </li>
+                                                    <li class="menu-sub-item">
+                                                        <a href="" class="menu-link">Destination fullscreen slider</a>
+                                                    </li>
+                                                    <li class="menu-sub-item">
+                                                        <a href="" class="menu-link">Fullscreen sections</a>
+                                                    </li>
+                                                    <li class="menu-sub-item">
+                                                        <a href="" class="menu-link">Review carousel</a>
+                                                    </li>
+                                               
                                                
                                             </ul>
                                         </div>
                                         
-                                        <div class="grid__col-4">
-                                            <ul class="element__menu-sub-list">
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="element__name menu-link">Presentation</a>
-                                                </li>
+                                        <div class="col l-3 m-12 c-12 ">
+                                            <span class="element__name menu-link menu-sub-item menu-item js-menu-sub-item">
+                                                Presentation
+                                                <i class="menu-link-icon fas fa-chevron-right"></i>
+                                            </span>
+                                            <ul class="element__menu-sub-list js-menu-sub-list">
+                                               
                                                 <li class="menu-sub-item">
                                                     <a href="" class="menu-link">Tour list</a>
                                                 </li>
@@ -358,11 +409,13 @@
                                             </ul>
                                         </div>
                                         
-                                        <div class="grid__col-4">
-                                            <ul class="element__menu-sub-list">
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="element__name menu-link">Classic</a>
-                                                </li>
+                                        <div class="col l-3 m-12 c-12 ">
+                                            <span class="element__name menu-link menu-sub-item menu-item js-menu-sub-item">
+                                                Classic
+                                                <i class="menu-link-icon fas fa-chevron-right"></i>
+                                            </span>
+                                            <ul class="element__menu-sub-list js-menu-sub-list">
+                                              
                                                 <li class="menu-sub-item">
                                                     <a href="" class="menu-link">My account</a>
                                                 </li>
@@ -391,11 +444,13 @@
                                             </ul>
                                         </div>
                                         
-                                        <div class="grid__col-4">
-                                            <ul class="element__menu-sub-list">
-                                                <li class="menu-sub-item">
-                                                    <a href="" class="element__name menu-link">Typoraphy</a>
-                                                </li>
+                                        <div class="col l-3 m-12 c-12 ">
+                                            <span class="element__name menu-link menu-sub-item menu-item js-menu-sub-item">
+                                                Typoraphy
+                                                <i class="menu-link-icon fas fa-chevron-right"></i>
+                                            </span>
+                                            <ul class="element__menu-sub-list js-menu-sub-list">
+                                               
                                                 <li class="menu-sub-item">
                                                     <a href="" class="menu-link">My account</a>
                                                 </li>
@@ -429,246 +484,255 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="container__slider">
-                    <div class="grid__row">
-                        <div class="slider-main js-slider-main">
-                            <img src="./assets/img/travel-slide-1.jpg" alt="" class="slider-main-img">
-                        </div>
-                        <div class="slider-main js-slider-main">
-                            <img src="./assets/img/travel-slide-2.jpg" alt="" class="slider-main-img">
-                        </div>
-                        <div class="slider-main js-slider-main">
-                            <img src="./assets/img/travel-slide-3.jpg" alt="" class="slider-main-img">
-                        </div>
-
-                        <div class="slider-sub js-slider-sub">
-                            <img src="./assets/img/travel-slide-1-1.jpg" alt="" class="slider-sub-img">
-                        </div>
-                        <div class="slider-sub js-slider-sub">
-                            <img src="./assets/img/travel-slide-2-1.jpg" alt="" class="slider-sub-img">
-                        </div>
-                        <div class="slider-sub js-slider-sub">
-                            <img src="./assets/img/travel-slide-3-1.jpg" alt="" class="slider-sub-img">
-                        </div>
-                    </div>
-                    <button class="slider-btn js-slider-prev" onclick="plusSlides(-1)">
-                        <i class="ti-angle-left"></i>
-                    </button>
-                    <button class="slider-btn slider-btn-right js-slider-next" onclick="plusSlides(1)">
-                        <i class="ti-angle-right"></i>
-                    </button>
-             
-                </div>
-                <div class="container__ads">
-                    <div class="grid__row ads-row">
-                        <div class="ads-wrap">
-                            <img src="./assets/img/ads.png" alt="" class="ads-wrap-img">
-                        </div>
-                        <div class="ads-info">
-                            <h2 class="ads-info__title">Our Popular Tours </h2>
-                            <p class="ads-info__dct">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viver ra nulla ut metus varius laoreet. Quisque rutrum. </p>
-                            <div class="ads-statistics">
-                                <ul class="ads-list">
-                                    <li class="ads-item">
-                                        <div class="ads-statistic__detail">
-                                            <span class="ads-name">Countryside</span>
-                                            <span class="ads-percen">76</span>
-                                        </div>
-                                        <div class="ads-statistics__data">
-                                            <div class="ads-statistics__data-quatity" style="width: 76%;"></div>
-                                        </div>
-                                    </li>
-                                    <li class="ads-item">
-                                        <div class="ads-statistic__detail">
-                                            <span class="ads-name">Vineyard</span>
-                                            <span class="ads-percen">92</span>
-                                        </div>
-                                        <div class="ads-statistics__data">
-                                            <div class="ads-statistics__data-quatity" style="width: 92%;"></div>
-                                        </div>
-                                    </li>
-                                    <li class="ads-item">
-                                        <div class="ads-statistic__detail">
-                                            <span class="ads-name">Wine Tasting</span>
-                                            <span class="ads-percen">86</span>
-                                        </div>
-                                        <div class="ads-statistics__data">
-                                            <div class="ads-statistics__data-quatity" style="width: 86%;"></div>
-                                        </div>
-                                    </li>
-                                </ul>
+                <div class="setsail-home">
+                    <div class="grid wide">
+                        
+                        <div class="container__slider">
+                            <div class="row">
+                                <div class="slider-main col l-8 m-8 c-12 js-slider-main">
+                                    <img src="./assets/img/travel-slide-1.jpg" alt="" class="slider-main-img">
+                                </div>
+                                <div class="slider-main col l-8 m-8 c-12 js-slider-main">
+                                    <img src="./assets/img/travel-slide-2.jpg" alt="" class="slider-main-img">
+                                </div>
+                                <div class="slider-main col l-8 m-8 c-12 js-slider-main">
+                                    <img src="./assets/img/travel-slide-3.jpg" alt="" class="slider-main-img">
+                                </div>
+        
+                                <div class="slider-sub col l-4 m-4 c-0 js-slider-sub hide-on-mobile">
+                                    <img src="./assets/img/travel-slide-1-1.jpg" alt="" class="slider-sub-img">
+                                </div>
+                                <div class="slider-sub col l-4 m-4 c-0 js-slider-sub hide-on-mobile">
+                                    <img src="./assets/img/travel-slide-2-1.jpg" alt="" class="slider-sub-img">
+                                </div>
+                                <div class="slider-sub col l-4 m-4 c-0 js-slider-sub hide-on-mobile">
+                                    <img src="./assets/img/travel-slide-3-1.jpg" alt="" class="slider-sub-img">
+                                </div>
                             </div>
+                            <button class="slider-btn hide-on js-slider-prev" onclick="plusSlides(-1)">
+                                <i class="ti-angle-left"></i>
+                            </button>
+                            <button class="slider-btn hide-on slider-btn-right js-slider-next" onclick="plusSlides(1)">
+                                <i class="ti-angle-right"></i>
+                            </button>
+                     
                         </div>
-                    </div>
-                    <div class="grid__row">
-                        <div class="grid-full">
-                            <img src="./assets/img/ads2.jpg" alt="" class="ads-wrap-img">
-                        </div>
-                    </div>
-                </div>
-                <div class="container__best-tour">
-                    <div class="best-tour__heading">
-                        <div class="best-tour__title">
-                            The Best Tours </div>
-                        <div class="best-tour__dct">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis </div>
-                    </div>
-                    <div class="best-tour-row">
-                        <div class="grid__col-4">
-                            
-                            <a href="" class="best-tour__wrap">
-                                <img src="./assets/img/tour.jpg" alt="" class="best-tour__wrap-img">
-
-                                <div class="best-tour__info">
-                                    <span class="">
-                                        Wine Festival </span>
-                                    <span class="">$555</span>
+                        <div class="container__ads">
+                            <div class="grid__row ads-row">
+                                <div class="ads-wrap">
+                                    <img src="./assets/img/ads.png" alt="" class="ads-wrap-img">
                                 </div>
-                            </a>
-                            <a href="" class="best-tour__wrap">
-                                <img src="./assets/img/tour4.jpg" alt="" class="best-tour__wrap-img">
-
-                                <div class="best-tour__info">
-                                    <span class="">
-                                        Champage </span>
-                                    <span class="">$2130</span>
+                                <div class="ads-info">
+                                    <h2 class="ads-info__title">Our Popular Tours </h2>
+                                    <p class="ads-info__dct">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viver ra nulla ut metus varius laoreet. Quisque rutrum. </p>
+                                    <div class="ads-statistics">
+                                        <ul class="ads-list">
+                                            <li class="ads-item">
+                                                <div class="ads-statistic__detail">
+                                                    <span class="ads-name">Countryside</span>
+                                                    <span class="ads-percen">76</span>
+                                                </div>
+                                                <div class="ads-statistics__data">
+                                                    <div class="ads-statistics__data-quatity" style="width: 76%;"></div>
+                                                </div>
+                                            </li>
+                                            <li class="ads-item">
+                                                <div class="ads-statistic__detail">
+                                                    <span class="ads-name">Vineyard</span>
+                                                    <span class="ads-percen">92</span>
+                                                </div>
+                                                <div class="ads-statistics__data">
+                                                    <div class="ads-statistics__data-quatity" style="width: 92%;"></div>
+                                                </div>
+                                            </li>
+                                            <li class="ads-item">
+                                                <div class="ads-statistic__detail">
+                                                    <span class="ads-name">Wine Tasting</span>
+                                                    <span class="ads-percen">86</span>
+                                                </div>
+                                                <div class="ads-statistics__data">
+                                                    <div class="ads-statistics__data-quatity" style="width: 86%;"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="grid__col-4">
-                            <a href="" class="best-tour__wrap">
-                                <img src="./assets/img/tour3.jpg" alt="" class="best-tour__wrap-img">
-
-                                <div class="best-tour__info">
-                                    <span class="">
-                                        Wine Tasting </span>
-                                    <span class="">$920</span>
-                                </div>
-                            </a>
-                            <a href="" class="best-tour__wrap">
-                                <img src="./assets/img/tour5.jpg" alt="" class="best-tour__wrap-img">
-
-                                <div class="best-tour__info">
-                                    <span class="">
-                                        Villages </span>
-                                    <span class="">$850</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid__col-4">
-                            <a href="" class="best-tour__wrap" style="height: 525px;">
-                                <img src="./assets/img/tour2.jpg" alt="" class="best-tour__wrap-img" style="height: 525px;">
-
-                                <div class="best-tour__info">
-                                    <span class="">
-                                        Camping </span>
-                                    <span class="">$1550</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid__col-4">
-                            <a href="" class="best-tour__wrap">
-                                <img src="./assets/img/tour6.jpg" alt="" class="best-tour__wrap-img">
-
-                                <div class="best-tour__info">
-                                    <span class="">
-                                        Harvert </span>
-                                    <span class="">$2600</span>
-                                </div>
-                            </a>
-                            <a href="" class="best-tour__wrap">
-                                <img src="./assets/img/tour7.jpg" alt="" class="best-tour__wrap-img">
-
-                                <div class="best-tour__info">
-                                    <span class="">
-                                        Local Wines </span>
-                                    <span class="">$1300</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid__row best-tour__rating">
-                        <div class="grid__col-4 rating-item">
-                            <span class="rating-number">45</span>
-                            <span class="rating-type">Glasses of Wine</span>
-                            <p class="rating-dtc">Cap at perspic iatis unde omnis iste natus error sit volup tatem</p>
-                        </div>
-                        <div class="grid__col-4 rating-item">
-                            <span class="rating-number">126</span>
-                            <span class="rating-type">Years of experience </span>
-                            <p class="rating-dtc">Sop ut perspic iatis ande emnis iste natus error sit volup fatom</p>
-                        </div>
-                        <div class="grid__col-4 rating-item">
-                            <span class="rating-number">452</span>
-                            <span class="rating-type">Unique Wines </span>
-                            <p class="rating-dtc">Sed ut perspic iatis unde omnis iste natus error sit volup tatem</p>
-                        </div>
-                        <div class="grid__col-4 rating-item">
-                            <span class="rating-number">247</span>
-                            <span class="rating-type">Sorts of Wine</span>
-                            <p class="rating-dtc">Cap of qerspic iatis ande umnis lcte natus error sit volup fatem</p>
-                        </div>
-                    </div>
-                    <div class="best-tour__video">
-                        <img src="./assets/img/video.jpg" alt="" class="video-img">
-
-                        <a href="https://vimeo.com/127347999" class="video-play-btn" target="_blank">
-                            <span>
-                                <i class="ti-control-play"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="container__popular">
-                    <div class="grid__row">
-                        <div class="popular-info">
-                            <div class="popular-info__heading">
-                                <h3 class="popular-info__title">Our Popular Tours</h3>
-                                <span class="popular-info__sub-title">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo</span>
                             </div>
                             <div class="grid__row">
-                                <div class="grid__col-2">
-                                    <div class="popular-info__wrap mb-20">
-                                        <div class="popular-info-icon">
-                                            <img src="./assets/img/ppl1.png" alt="" >
-                                        </div>
-                                        <span class="popular-info__dct">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span>
-                                    </div>
-                                    <div class="popular-info__wrap">
-                                        <div class="popular-info-icon">
-                                            <img src="./assets/img/ppl3.png" alt="" >
-                                        </div>
-                                        <span class="popular-info__dct">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span>
-                                    </div>
+                                <div class="grid-full">
+                                    <img src="./assets/img/ads2.jpg" alt="" class="ads-wrap-img">
                                 </div>
-                                <div class="grid__col-2">
-                                    <div class="popular-info__wrap mb-20">
-                                        <div class="popular-info-icon">
-                                            <img src="./assets/img/ppl2.png" alt="" >
-                                        </div>
-                                        <span class="popular-info__dct">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span>
-                                    </div>
-                                    <div class="popular-info__wrap">
-                                        <div class="popular-info-icon">
-                                            <img src="./assets/img/ppl4.png" alt="" >
-                                        </div>
-                                        <span class="popular-info__dct">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
-                        <div class="popular-img">
-                            <img src="./assets/img/popular.png" alt="">
+                        <div class="container__best-tour">
+                            <div class="best-tour__heading">
+                                <div class="best-tour__title">
+                                    The Best Tours </div>
+                                <div class="best-tour__dct">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis </div>
+                            </div>
+                            <div class="best-tour-row">
+                                <div class="col l-3 m-6 c-12">
+                                    
+                                    <a href="" class="best-tour__wrap">
+                                        <img src="./assets/img/tour.jpg" alt="" class="best-tour__wrap-img">
+        
+                                        <div class="best-tour__info">
+                                            <span class="">
+                                                Wine Festival </span>
+                                            <span class="">$555</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="best-tour__wrap">
+                                        <img src="./assets/img/tour4.jpg" alt="" class="best-tour__wrap-img">
+        
+                                        <div class="best-tour__info">
+                                            <span class="">
+                                                Champage </span>
+                                            <span class="">$2130</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <a href="" class="best-tour__wrap">
+                                        <img src="./assets/img/tour3.jpg" alt="" class="best-tour__wrap-img">
+        
+                                        <div class="best-tour__info">
+                                            <span class="">
+                                                Wine Tasting </span>
+                                            <span class="">$920</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="best-tour__wrap">
+                                        <img src="./assets/img/tour5.jpg" alt="" class="best-tour__wrap-img">
+        
+                                        <div class="best-tour__info">
+                                            <span class="">
+                                                Villages </span>
+                                            <span class="">$850</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <a href="" class="best-tour__wrap best-tour__wrap--special-img" >
+                                        <img src="./assets/img/tour2.jpg" alt="" class="best-tour__wrap-img">
+        
+                                        <div class="best-tour__info">
+                                            <span class="">
+                                                Camping </span>
+                                            <span class="">$1550</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <a href="" class="best-tour__wrap">
+                                        <img src="./assets/img/tour6.jpg" alt="" class="best-tour__wrap-img">
+        
+                                        <div class="best-tour__info">
+                                            <span class="">
+                                                Harvert </span>
+                                            <span class="">$2600</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="best-tour__wrap">
+                                        <img src="./assets/img/tour7.jpg" alt="" class="best-tour__wrap-img">
+        
+                                        <div class="best-tour__info">
+                                            <span class="">
+                                                Local Wines </span>
+                                            <span class="">$1300</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row best-tour__rating">
+                                <div class="col l-3 m-6 c-12 rating-item">
+                                    <span class="rating-number">45</span>
+                                    <span class="rating-type">Glasses of Wine</span>
+                                    <p class="rating-dtc">Cap at perspic iatis unde omnis iste natus error sit volup tatem</p>
+                                </div>
+                                <div class="col l-3 m-6 c-12 rating-item">
+                                    <span class="rating-number">126</span>
+                                    <span class="rating-type">Years of experience </span>
+                                    <p class="rating-dtc">Sop ut perspic iatis ande emnis iste natus error sit volup fatom</p>
+                                </div>
+                                <div class="col l-3 m-6 c-12 rating-item">
+                                    <span class="rating-number">452</span>
+                                    <span class="rating-type">Unique Wines </span>
+                                    <p class="rating-dtc">Sed ut perspic iatis unde omnis iste natus error sit volup tatem</p>
+                                </div>
+                                <div class="col l-3 m-6 c-12 rating-item">
+                                    <span class="rating-number">247</span>
+                                    <span class="rating-type">Sorts of Wine</span>
+                                    <p class="rating-dtc">Cap of qerspic iatis ande umnis lcte natus error sit volup fatem</p>
+                                </div>
+                            </div>
+                            <div class="best-tour__video">
+                                <img src="./assets/img/video.jpg" alt="" class="video-img">
+        
+                                <a href="https://vimeo.com/127347999" class="video-play-btn" target="_blank">
+                                    <span>
+                                        <i class="ti-control-play"></i>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
+                        <div class="container__popular ">
+                            <div class="row">
+                                <div class="popular-info">
+                                    <div class="popular-info__heading">
+                                        <h3 class="popular-info__title">Our Popular Tours</h3>
+                                        <span class="popular-info__sub-title">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col l-6">
+                                            <div class="popular-info__wrap mb-20">
+                                                <div class="popular-info-icon">
+                                                    <img src="./assets/img/ppl1.png" alt="" >
+                                                </div>
+                                                <span class="popular-info__dct">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span>
+                                            </div>
+                                            <div class="popular-info__wrap">
+                                                <div class="popular-info-icon">
+                                                    <img src="./assets/img/ppl3.png" alt="" >
+                                                </div>
+                                                <span class="popular-info__dct">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6">
+                                            <div class="popular-info__wrap mb-20">
+                                                <div class="popular-info-icon">
+                                                    <img src="./assets/img/ppl2.png" alt="" >
+                                                </div>
+                                                <span class="popular-info__dct">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span>
+                                            </div>
+                                            <div class="popular-info__wrap">
+                                                <div class="popular-info-icon">
+                                                    <img src="./assets/img/ppl4.png" alt="" >
+                                                </div>
+                                                <span class="popular-info__dct">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="popular-img">
+                                    <img src="./assets/img/popular.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="grid__row footer-row">
-                <div class="grid__col-4">
+
+        <!-- travel-agency -->
+
+        <footer class="grid ">
+            <div class="row footer-row">
+                <div class="col l-3 m-6 c-12 footer-mobile-col footer-tablet-col">
                     <a href=""class="footer-logo">
                         <img src="./assets/img/logo-footer.png" alt="" class="footer-logo-img">
                     </a>
@@ -695,7 +759,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="grid__col-4">
+                <div class="col l-3 m-6 c-12 footer-mobile-col footer-tablet-col">
                     <h6 class="footer-heading">Our Recent Posts</h6>
                     <ul class="footer-list">
                         <li class="footer-item">
@@ -718,7 +782,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="grid__col-4">
+                <div class="col l-3 m-6 c-12 footer-mobile-col ">
                     <h6 class="footer-heading">Subscribe to our Newsletter</h6>
                     <span class="footer-link footer-link-position">Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</span>
                     <div class="footer-input">
@@ -731,9 +795,47 @@
                     </div>
                     <button class="footer-btn footer-input-btn">subscribe</button>
                 </div>
-                <div class="grid__col-4">
+                <div class="col l-3 m-6 c-12 footer-mobile-col ">
                     <h6 class="footer-heading">Our Instagram</h6>
                     <span class="footer-link footer-link-position">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</span>
+
+                    <div class="instagram">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-1.jpg" alt="" class="instagram-img">
+                                </div>
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-2.jpg" alt="" class="instagram-img">
+                                </div>
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-3.jpg" alt="" class="instagram-img">
+                                </div>
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-4.jpg" alt="" class="instagram-img">
+                                </div>
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-5.jpg" alt="" class="instagram-img">
+                                </div>
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-6.jpg" alt="" class="instagram-img">
+                                </div>
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-7.jpg" alt="" class="instagram-img">
+                                </div>
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-8.jpg" alt="" class="instagram-img">
+                                </div>
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-9.jpg" alt="" class="instagram-img">
+                                </div>
+                                <div class="col l-0 m-4 c-6">
+                                    <img src="./assets/img/ft-ins-10.jpg" alt="" class="instagram-img">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="copy-right">
@@ -745,7 +847,7 @@
         </footer>
  
         <!-- sub web -->
-        <div class="setsail-sub-port-open js-setsail-sub-port-open">
+        <div class="setsail-sub-port-open js-setsail-sub-port-open hide-on">
             <button class="setsail-sub-btn setsail-sub-btn--brand">
                 <i class="ti-themify-favicon-alt"></i>
                 <span class="setsail-sub-btn__brand-name">Related</span>
@@ -756,7 +858,7 @@
                 <span class="setsail-sub-btn__shop-name">Buy now</span>
             </button>
         </div>
-        <div class="setsail-sub js-setsail-sub">
+        <div class="setsail-sub js-setsail-sub hide-on">
             
             <div class="setsail-sub-container js-setsail-sub-container">
                 <div class="setsail-sub-title">
@@ -863,7 +965,7 @@
             </div>
             
         </div>
-        <div class="setsail-sub-port-close js-setsail-sub-port-close">
+        <div class="setsail-sub-port-close js-setsail-sub-port-close hide-on">
             <button class="setsail-sub-btn setsail-sub-btn--brand close-btn">
                 <i class="ti-arrow-right"></i>
             </button>
@@ -878,12 +980,9 @@
 
     </div>
 
-    <a href="#" class="btn-scroll-to-top">
+    <a href="#" class="btn-scroll-to-top ">
         Top
     </a>
-
-
-
 
     <div class="modal js-modal-login">
         <div class="modal-container js-modal-container">
