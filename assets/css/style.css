@@ -366,6 +366,10 @@ header{
 .menu-link .menu-link-icon{
     display: none;
 }
+.menu-link .menu-link-icon-pc{
+    display: block;
+}
+
 .menu-link.active{
     color: var(--primary-color);
 }
@@ -422,6 +426,9 @@ header{
 
     /* overflow: hidden; */
 }
+.menu-sub-list-virtual{
+    display: none!important;
+}
 
 .menu-item:hover::after{
     display: block;
@@ -469,6 +476,9 @@ header{
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
+    color: #505050;
+    font-size: 1.5rem;
+
 }
 .element{
     /* padding: 22px 0; */
